@@ -1,3 +1,4 @@
+import { TEST_SAVE_DATA } from "../consts/testData";
 import { SaveData } from "../models/saveData";
 
 /**
@@ -5,5 +6,6 @@ import { SaveData } from "../models/saveData";
  * @returns saveData
  */
 export function getSaveData(): SaveData {
-    return {};
+    const result = TEST_SAVE_DATA;
+    return result;
 }
