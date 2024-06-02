@@ -7,7 +7,7 @@ export interface SaveData {
     incorrectCount: number, /** 間違っていない箇所を指摘した率 */
     overlookCount: number, /** 間違いを見逃した率 */
     totalCheckPoint: number, /** チェックする箇所の合計数 */
-    enging: { /** 最終到達エンディング */
+    ending: { /** 最終到達エンディング */
         wasReachEnd: boolean,
         reachEndName?: string
     },
