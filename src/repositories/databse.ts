@@ -6,6 +6,7 @@ import { SaveData } from "../models/saveData";
  * @returns saveData
  */
 export function getSaveData(): SaveData {
+    // TODO: ゲーム側のセーブデータを取得するようにする。
     const result = TEST_SAVE_DATA;
     return result;
 }
