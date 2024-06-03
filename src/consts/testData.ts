@@ -7,7 +7,7 @@ export const TEST_SAVE_DATA: SaveData = {
     incorrectCount: 10,
     overlookCount: 10,
     totalCheckPoint: 30,
-    enging: {
+    ending: {
         wasReachEnd: true,
         reachEndName: '企業スパイエンド'
     },
