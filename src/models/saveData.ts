@@ -4,7 +4,7 @@
 export interface UserDataTable {
     id: number,
     steamId: string, /** ゲームにて保存されたセーブデータ紐付けのsteamID */
-    savedata: SaveData
+    savedata: string /** パース前の為string */
 }
 
 /**
