@@ -1,4 +1,13 @@
 /**
+ * D1上のテーブル形式を構造として保持するインタフェース
+ */
+export interface UserDataTable {
+    id: number,
+    steamId: string, /** ゲームにて保存されたセーブデータ紐付けのsteamID */
+    savedata: SaveData
+}
+
+/**
  * ゲーム側のセーブデータ構造を保持するインタフェース
  */
 export interface SaveData {
