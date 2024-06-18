@@ -1,10 +1,6 @@
 "use client";
 
-import SteamProvider from 'next-auth-steam';
-import NextAuth from 'next-auth/next'
-import { signIn, signOut } from "next-auth/react";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { signIn } from "next-auth/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSteam } from '@fortawesome/free-brands-svg-icons';
 import '../app/globals.css'; 
