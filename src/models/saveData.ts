@@ -3,7 +3,7 @@
  */
 export interface UserDataTable {
     id: number,
-    steamId: string, /** ゲームにて保存されたセーブデータ紐付けのsteamID */
+    steam_id: string, /** ゲームにて保存されたセーブデータ紐付けのsteamID */
     savedata: string /** パース前の為string */
 }
 
@@ -17,10 +17,10 @@ export interface SaveData {
     overlookCount: number, /** 間違いを見逃した率 */
     totalCheckPoint: number, /** チェックする箇所の合計数 */
     ending: { /** 最終到達エンディング */
-        wasReachEnd: boolean,
-        reachEndName?: string
+        wasReachEnd: boolean, /** エンディングに到達しているか */
+        reachEndName?: string /** 到達したエンディングの名前 */
     },
-    playerSelections: PlayerSelection[]
+    playerSelections: PlayerSelection[] /** プレイヤーの選択した分岐の一覧 */
 }
 
 /**

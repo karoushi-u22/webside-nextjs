@@ -3,6 +3,8 @@ import NextAuth from 'next-auth/next'
 
 import type { NextRequest } from 'next/server'
 
+const realm = process.env.HOST ?? 'http://localhost:3000';
+
 async function handler(
   req: NextRequest,
   ctx: { params: { nextauth: string[] } }
@@ -11,7 +13,7 @@ async function handler(
     providers: [
       SteamProvider(req, {
         clientSecret: process.env.STEAM_SECRET!,
-        callbackUrl: 'http://localhost:3000/api/auth/callback'
+        callbackUrl: `${realm}/api/auth/callback`
       })
     ]
   })
