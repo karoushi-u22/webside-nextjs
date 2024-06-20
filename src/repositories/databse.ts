@@ -2,7 +2,6 @@ import { getServerSession } from 'next-auth';
 import { TEST_SAVE_DATA } from '../consts/testData';
 import { SaveData, UserDataTable } from '../models/saveData';
 import D1Wrapper from 'cloudflare-d1-wrapper';
-import { log } from 'console';
 
 /**
  * ログインした情報からゲーム側のセーブデータを取得し、構造化する関数
